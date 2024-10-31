@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+    
+</head>
+<body>
+    <nav id="desktop-nav">
+        <section class="logo">Boitshoko Senye</section>
+        <section>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </section>
+    </nav>
+    <nav id="hamburger-nav">
+        <section class="logo">Boitshoko Senye</section>
+        <section class="hamburger-menu">
+            <section class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </section>
+            <section class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </section>
+        </section>
+        <section></section>
+    </nav>
+        <section id="profile">
+            <section class="section__pic-container">
+                <img src="./assets/profile-pic.png" alt="Boitshoko Senye profile picture"/>
+            </section>
+            <section class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Boitshoko Senye</h1>
+                <p class="section__text__p2">Fullstack Developer</p>
+                <section class="btn-container">
+                    <button 
+                        class="btn btn-color-2" 
+                        onclick="window.open('./assets/resume-example.pdf')"
+                        >Download CV</button>
+                    <button 
+                    class="btn btn-color-1" 
+                    onclick="window.location.href='./#contact'"
+                    >Contact Info
+                </button>
+                </section>
+                <section id="socials-container">
+                    <img src="./assets/linkedin.png" alt="My linkedin profile"
+                        class="icon" 
+                        onclick="location.href='https://linkedin.com/'"
+                    />
+                    <img src="./assets/github.png" alt="My Github Profile"
+                        class="icon" 
+                        onclick="location.href='https://github'"
+                    />
+                </section>
+            </section>
+        </section>
+        <section id="about">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <section class="section-container">
+                <section class="section__pic-container">
+                    <img src="./assets/about-pic.png" alt="profile-picture"
+                    class="about-pic">
+                </section>
+                <section class="about-details-container">
+                    <section class="about-containers">
+                        <section class="details-container">
+                            <img src="./assets/experience.png" alt="experience icon"
+                            class="icon">
+                            <h3>Exper ience</h3>
+                            <p>2+ Years <br>Fullstack Developer</p>
+                        </section>
+                        <section class="details-container">
+                            <img src="./assets/education.png" alt="education icon"
+                            class="icon" >
+                            <h3>Education</h3>
+                            <p>B.Sc Bachelors Degree <br>M.Sc Masters Degree</p>
+                        </section>
+                    </section>
+                    <section class="text-container">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Exercitationem, vero nulla rerum voluptas veritatis at
+                            eos in autem neque beatae praesentium impedit facilis 
+                            aspernatur, placeat quia magni commodi. Explicabo, 
+                            laudantium quam! Temporibus fugit vel impedit placeat 
+                            ad eius, similique dolorem laudantium molestiae eligendi 
+                            ipsa quibusdam, doloribus, dolor nesciunt tenetur obcaecati?
+                        </p>
+                    </section>  
+                </section>
+            </section>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+                onclick="location.href='./#experience'">
+        </section>
+        <section id="experience">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Experience</h1>
+            <section class="experience-details-container">
+                <section class="about-containers">
+                    <section class="details-container">
+                        <h2 class="experience-sub-title">Frontend Development</h2>
+                        <section class="article-container">
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon"
+                                class="icon">
+                                <section>
+                                    <h3>HTML</h3>
+                                    <p>Experienced</p>
+                                </section>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon"
+                                class="icon">
+                                <section>
+                                    <h3>CSS</h3>
+                                    <p>Experienced</p>
+                                </section>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon"
+                                class="icon">
+                                <section>
+                                    <h3>SASS</h3>
+                                    <p>Intermediate</p>
+                                </section>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon"
+                                class="icon">
+                                <section>
+                                    <h3>JavaScript</h3>
+                                    <p>Basic</p>
+                                </section>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon"
+                                class="icon">
+                                <section>
+                                    <h3>TypeScript</h3>
+                                    <p>Basic</p>
+                                </section>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon"
+                                class="icon">
+                                <section>
+                                    <h3>Material UI</h3>
+                                    <p>Intermediate</p>
+                                </section>
+                            </article>
+                        </section>
+                    </section>
+                    <section class="details-container">
+                        <h2 class="experience-sub-title">Backend Development</h2>
+                        <section class="article-container">
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon"
+                                class="icon">
+                                <section>
+                                    <h3>PostgresSQL</h3>
+                                    <p>Experienced</p>
+                                </section>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon"
+                                class="icon">
+                                <section>
+                                    <h3>Node JDS</h3>
+                                    <p>Intermediate</p>
+                                </section>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon"
+                                class="icon">
+                                <section>
+                                    <h3>Express JS</h3>
+                                    <p>Intermediate</p>
+                                </section>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon"
+                                class="icon">
+                                <section>
+                                    <h3>Git</h3>
+                                    <p>Intermediate</p>
+                                </section>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon"
+                                class="icon">
+                                <section>
+                                    <h3>TypeScript</h3>
+                                    <p>Basic</p>
+                                </section>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience Icon"
+                                class="icon">
+                                <section>
+                                    <h3>Material UI</h3>
+                                    <p>Intermediate</p>
+                                </section>
+                            </article>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+                onclick="location.href='./#projects'">
+        </section>
+        <section id="projects">
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+            <section class="experience-details-container">
+                <section class="about-containers">
+                <section class="details-container color-container">
+                    <section class="article-container">
+                        <img 
+                            src="./assets/project-1.png" 
+                            alt="Project 1" 
+                            class="project-img"
+                        />
+                    </section>
+                    <h2 class="experience-sub-title project title">Project One</h2>
+                    <section class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com'">Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com'">Live Demo</button>
+                    </section>
+                </section>
+                <section class="details-container color-container">
+                    <section class="article-container">
+                        <img 
+                            src="./assets/project-2.png" 
+                            alt="Project 2" 
+                            class="project-img"
+                        />
+                    </section>
+                    <h2 class="experience-sub-title project title">Project Two</h2>
+                    <section class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com'">Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com'">Live Demo</button>
+                    </section>
+                </section>
+                <section class="details-container color-container">
+                    <section class="article-container">
+                        <img 
+                            src="./assets/project-3.png" 
+                            alt="Project 3" 
+                            class="project-img"
+                        />
+                    </section>
+                    <h2 class="experience-sub-title project title">Project Three</h2>
+                    <section class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com'">Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com'">Live Demo</button>
+                    </section>
+                </section></section>
+            </section>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+                onclick="location.href='./#projects'">
+        </section>
+        <section id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <section class="contact-info-upper-container">
+                <section class="contact-info-container">
+                    <img 
+                        src="assets/email.png" 
+                        alt="Email icon" 
+                        class="icon contact-icon email-icon">
+                    <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+                </section>
+                <section class="contact-info-container">
+                    <img 
+                        src="assets/linkedin.png" 
+                        alt="linkedin icon" 
+                        class="icon contact-icon">
+                    <p><a href="https://www.linkedin.com">linkedIn</a></p>
+                </section>
+            </section>
+        </section>
+        <footer>
+            <nav>
+                <section class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </section>
+            </nav>
+            <p>Copyright &#169; 2024 Boitshoko Senye. All rights reserved.</p>
+        </footer>
+        <script src="script.js"></script> 
+</body>
+</html>
